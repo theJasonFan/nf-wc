@@ -1,0 +1,7 @@
+output/
+data/
+.command.*
+
+# Nextflow
+work/
+.nextflow*
