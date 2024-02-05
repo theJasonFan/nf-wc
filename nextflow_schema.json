@@ -19,11 +19,13 @@
         "outdir": {
           "type": "string",
           "description": "Path to output directory",
-          "default": "output"
+          "default": "output",
+          "format": "directory-path"
         },
         "inputFile": {
           "type": "string",
-          "description": "Path to input file"
+          "description": "Path to input file",
+          "format": "file-path"
         }
       }
     }
