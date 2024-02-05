@@ -8,7 +8,7 @@ include {
 
 // Print help message, supply typical command line usage for the pipeline
 if (params.help) {
-   log.info paramsHelp("nextflow run . --input-file input")
+   log.info paramsHelp("nextflow run . --input-file input --output-file output ")
    exit 0
 }
 
@@ -25,7 +25,7 @@ process wc {
     output:
         path outputFile
     script:
-        outputFile = "wc.out"
+        outputFile = params.outputFile
         """
         wc -l ${inputFile} > ${outputFile}
         """
