@@ -19,7 +19,7 @@ validateParameters()
 log.info paramsSummaryLog(workflow)
 
 process wc {
-    publishDir params.outdir, mode: 'move', overwrite: true
+    publishDir params.outdir, overwrite: true
     input:
         path inputFile
     output:
